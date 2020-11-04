@@ -5,21 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
-public class Municipio {
+public class ZonaEleitoral {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long ID;
 	private String Nome;
-	private int Populacao;
-
-	public int getPopulacao() {
-		return Populacao;
-	}
-
-	public void setPopulacao(int populacao) {
-		Populacao = populacao;
-	}
 
 	public Long getID() {
 		return ID;
